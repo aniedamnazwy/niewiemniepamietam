@@ -90,3 +90,34 @@ switch (planeta){
         console.log("Zostaję w domu i czytam książkę")
     }
     
+    let punkt = 0;
+    let pyt1 = prompt("ile to 2 + 2?")
+    if(pyt1 == 4){
+        punkt++
+    }
+
+    let pyt2 = prompt("napisz \"HELLO WORLD!\"")
+    if(pyt2 == "HELLO WORLD!"){
+        punkt++
+    }
+
+    let pyt3 = prompt("czy kaniuka ma za mało cytryny w oczach?(y/n)")
+    if(pyt3 == "y"){
+        punkt++
+    }
+
+    switch (punkt){
+        case 0:
+            alarm("brzuch boli od pładków.")
+            break;
+        case 1:
+            alarm("Adept")
+            break;
+        case 2:
+            alarm("Mistrz")
+            break;
+        case 3:
+            alarm("Czarnoksiężnik")
+            break;
+    }
+    
