@@ -120,3 +120,60 @@ switch (planeta){
             alert("Czarnoksiężnik")
             break;
     }
+
+    let kot = prompt("podaj wage kota(1-6)")
+    if(kot<1||kot>6){
+        alert("zła wartość")
+    }else{
+        switch (kot){
+            case 1:
+                console.log("20g")
+                break;
+            case 2:
+                console.log("31g")
+                break;
+            case 3:
+                console.log("41g")
+                break;
+            case 4:
+                console.log("50g")
+                break;
+            case 5:
+                console.log("58g")
+                break;
+            case 6:
+                console.log("66g")
+                break;
+        }
+    }
+
+    let sila = prompt("podaj ładowność ciężarówki(w tonach)")
+    let ciez1 = 5, ciez2 = 3, ciez3 = 2
+    if(sila<(ciez1+ciez2+ciez3)){
+        console.log("ciężarówka się połamała")
+    }else{
+        console.log("ciężarówka wytrzymała")
+    }
+    alert("quiz!")
+    let odpowiedzi = [["3+3",6],["4*2",8],["5^2",25],["(1+1)*3",6],["2*2^2",8],["8+20-4",24],["1+2+3+4+5",15],["faktorial z 4",24],["20*20",400],["czy kaniuka może mieć cytryne w oczach?(y/n)",y]]
+    punkt=0
+    for(let i=0;i<odpowiedzi.length;i++){
+        let odp = prompt(odpowiedzi[i][0])
+        if(odp == odpowiedzi[i][1]){
+            punkt++
+        }
+    }
+    if(punkt<=4){
+        console.log("Spróbuj jeszcze raz")
+    }else{
+        if(punkt<=8){
+            console.log("Całkiem nieźle")
+        }else{
+            console.log("Jesteś mistrzem")
+        }
+    }
+
+    let stolice = ["Warszawa","Paryż","Madryt","Moskwa","Lwów"]
+    stolice.forEach(element => {
+        console.log(element)
+    });
