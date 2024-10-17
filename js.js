@@ -19,7 +19,7 @@ if(budynek < 10 || budynek > 15){
 
 let produkty = [["ogurek",15.0],["jabko",1500.99],["autko", 2.50],["gravitrax duży zestaw", 392.99],["catan", 150.0]]
 let ktoryProd = prompt("którego produkt podać informacje?")
-ktoryProd++
+ktoryProd--
 if(ktoryProd > produkty.length || ktoryProd <= 0){
     console.log("nie prawidłowe id(zaczynają się na 1 i kończą się ostatnim produktem)")
 }else{
@@ -177,3 +177,53 @@ switch (planeta){
     stolice.forEach(element => {
         console.log(element)
     });
+
+
+    let suma = 0
+    let liczby = [1,2,3,4,5,6,7,8,9,10]
+    for(let i=0;i<10;i++){
+        if((i+1)%3){
+            suma+=liczby[i]
+        }
+    }
+    console.log(suma)
+
+    let klienci = [["mateusz","krupski",,],["ania","kowalska",,]]
+    klienci.forEach((el) =>
+    {
+        if(el[2]==""){
+            let wiek = prompt("podaj wiek")
+        }
+        if(el[3]==""){
+            let wiek = prompt("podaj płeć")
+        }
+    }
+    )
+
+    let warzywa = [["ogurek",15.0,"zielony"],["marchew",1500.99,"pomarańczowy"],["sałata", 2.50,"zielony"],["fasola", 392.99,"czerwony"],["fasolka szparagowa", 150.0,"zielony"]]
+    let ktoryWarz = prompt("którego warzywa podać informacje?")
+    ktoryWarz--
+    if(ktoryWarz > warzywa.length || ktoryWarz <= 0){
+        console.log("nie prawidłowe id(zaczynają się na 1 i kończą się ostatnim produktem)")
+    }else{
+        console.log("nazwa: "+(warzywa[ktoryWarz][0])+". cena: "+(warzywa[ktoryWarz][1])+". kolor: "+(warzywa[ktoryWarz][2]))
+    }
+
+    class winda{
+        pietro = 0
+        constructor(szer, dlug, wys, pojem){
+            this.szer = szer
+            this.dlug = dlug
+            this.wys = wys
+            this.pojem = pojem
+        }
+        wjedz(pietro){
+            this.pietro = pietro
+        }
+    }
+
+    let LublinPpl = 329600
+    let LublinWsp = ["51.2509° N","22.5747° E"]
+    let powierzchnia = 147.5
+
+    console.log(`Populacja Lublina: ${LublinPpl}, współrzędne: ${LublinWsp[0]}, ${LublinWsp[0]}, powierzchnia: ${powierzchnia}`)
